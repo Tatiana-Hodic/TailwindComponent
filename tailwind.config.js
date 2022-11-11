@@ -1,0 +1,115 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        brand: {
+            50: '#F6F3EE',
+            100: '#EDE7DE',
+            300: '#C9B69C',
+            500: '#A68659',
+            700: '#745E3E',
+            900: '#423624',
+        },
+        green: '#99D06E',
+        yellow: '#FCDE74',
+        white: '#fff',
+        black: '#000',
+        violette: '#B4B2F5',
+        red: '#E35252',
+        gray: {
+            300: '#F8F8F8',
+            500: '#ECECEC',
+            700: '#222222',
+        },
+        shadow: {
+            10: 'rgb(0, 0, 0, 0.10)',
+            30: 'rgb(0, 0, 0, 0.30)',
+            50: 'rgb(0, 0, 0, 0.50)',
+            70: 'rgb(0, 0, 0, 0.70)',
+        },
+    },
+    screens: {
+        xs: '380px',
+        sm: '480px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        xxl: '1440px',
+        xxxl: '1680px',
+        max: '1920px',
+    },
+    container: {
+        center: true,
+        padding: '1rem',
+        screens: {
+            xs: '390px',
+            sm: '480px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px',
+            '2xl': '1440px',
+        },
+    },
+    fontFamily: {
+        lyon: ['Lyon', 'sans-serif'],
+        graphik: ['Graphik', 'sans-serif']
+    },
+    extend: {
+        height: {
+            '25': '6rem',
+            '85': '22rem',
+            '91': '23.5rem',
+        },
+        padding: {
+            '30': '1.875rem',
+            '52': '3.25rem',
+        },
+        fontSize: {
+            '14': ['0.875rem'],
+            '16': ['1rem'],
+            '18': ['1.125rem'],
+            '20': ['1.25rem'],
+            '24': ['1.5rem'],
+            '28': ['1.75rem'],
+            '32': ['2rem'],
+            '40': ['2.5rem'],
+            '50': ['3.125rem'],
+            '60': ['3.75rem'],
+            '70': ['4.375rem'],
+            '80': ['5rem'],
+            '100': ['6.25rem'],
+            '150': ['9.375rem'],
+            '200': ['12.5rem']
+        },
+        lineHeight: {
+            'auto': 'auto',
+            '18': '1.125rem',
+            '30': '1.875rem',
+            '32': '2rem',
+            '34': '2.125rem',
+            '37': '2.3125rem',
+            '42': '2.625rem',
+            '44': '2.75rem',
+            '50': '3.125rem',
+            '60': '3.75rem',
+            '66': '4.125rem',
+            '68': '4.25rem',
+            '74': '4.625rem',
+        },
+        borderRadius: {
+            '10': '0.625rem',
+            '30': '1.875rem',
+            '6xl': '2.875rem',
+        },
+        maxWidth: {
+            '1/4': '25%',
+            '1/2': '50%',
+            '3/4': '75%',
+        },
+    }
+},
+  plugins: [],
+}
